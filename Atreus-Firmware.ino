@@ -42,7 +42,7 @@ const macro_t *macroAction(uint8_t macroIndex, uint8_t keyState) {
 }
 
 void setup() {
-  Qukeys.setTimeout(300);  
+  Qukeys.setTimeout(300);
   Kaleidoscope.setup();
 }
 
