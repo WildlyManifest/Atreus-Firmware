@@ -25,7 +25,7 @@ enum {
   RESET
 };
 
-#include "./keymaps/default.h"
+#include "./keymaps/dvorak-quasimodal.h"
 
 KALEIDOSCOPE_INIT_PLUGINS(Qukeys, Macros);
 
@@ -42,6 +42,7 @@ const macro_t *macroAction(uint8_t macroIndex, uint8_t keyState) {
 }
 
 void setup() {
+  Qukeys.setTimeout(300);  
   Kaleidoscope.setup();
 }
 
