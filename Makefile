@@ -23,7 +23,7 @@ ifneq ("$(wildcard $(MANUALLY_INSTALLED_ENV)/boards.txt)","")
 
 $(info ***************************************************************************)
 $(info It appears that you have installed two copies of Kaleidoscope. One copy was)
-$(info installed using Arduino's "Board Manager", while the other was installed by)
+$(info installed using Arduino\'s \"Board Manager\", while the other was installed by)
 $(info hand, probably using "git".)
 $(info )
 $(info This will likely cause some trouble as you try to build keyboard firmware)
