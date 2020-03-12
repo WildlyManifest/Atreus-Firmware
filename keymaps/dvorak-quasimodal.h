@@ -23,10 +23,10 @@
 #define PUNV 2
 
 #define MO(n) ShiftToLayer(n)
-#define LGUI_T(n) MT(Key_LeftGui, n)
-#define RGUI_T(n) MT(Key_RightGui, n)
-#define LALT_T(n) MT(Key_LeftAlt, n)
-#define RALT_T(n) MT(Key_RightAlt, n)
+#define LGUI_T(n) MT(LeftGui, n)
+#define RGUI_T(n) MT(RightGui, n)
+#define LALT_T(n) MT(LeftAlt, n)
+#define RALT_T(n) MT(RightAlt, n)
 
 /* *INDENT-OFF* */
 KEYMAPS(
@@ -51,18 +51,18 @@ KEYMAPS(
       ,Key_F1  ,Key_F2  ,Key_F3           ,Key_F4   ,Key_F5
       ,___     ,___     ,___              ,___      ,___     ,Key_Escape
 
-                  ,Key_KeypadDivide   ,Key_Keypad7  ,Key_Keypad8  ,Key_Keypad9                ,Key_KeypadSubtract
-                  ,Key_KeypadMultiply ,Key_Keypad4  ,Key_Keypad5  ,Key_Keypad6                ,Key_KeypadAdd
-                  ,Key_KeypadEquals   ,Key_Keypad1  ,Key_Keypad2  ,Key_Keypad3                ,Key_KeypadEnter
-      ,Key_Enter  ,___                ,Key_Keypad0  ,___          ,RGUI_T(Key_KeypadDecimal)  ,___
+                  ,Key_KeypadDivide   ,Key_Keypad7  ,Key_Keypad8  ,Key_Keypad9            ,Key_KeypadSubtract
+                  ,Key_KeypadMultiply ,Key_Keypad4  ,Key_Keypad5  ,Key_Keypad6            ,Key_KeypadAdd
+                  ,Key_KeypadEquals   ,Key_Keypad1  ,Key_Keypad2  ,Key_Keypad3            ,Key_KeypadEnter
+      ,Key_Enter  ,___                ,Key_Keypad0  ,___          ,RGUI_T(KeypadDecimal)  ,___
    ),
   /* Punctuation, Navigation */
   [PUNV] = KEYMAP_STACKED
   (
-       Key_Backtick ,Key_Slash1         ,Key_Backslash      ,Key_LeftBracket  ,Key_RightBracket
-      ,Key_6        ,Key_7              ,Key_8              ,Key_9            ,Key_0
-      ,Key_1        ,Key_2              ,Key_3              ,Key_4            ,Key_5
-      ,___          ,LGUI_T(Key_Minus)  ,LALT_T(Key_Equals) ,___              ,___              ,Key_Tab
+       Key_Backtick ,Key_Slash      ,Key_Backslash  ,Key_LeftBracket  ,Key_RightBracket
+      ,Key_6        ,Key_7          ,Key_8          ,Key_9            ,Key_0
+      ,Key_1        ,Key_2          ,Key_3          ,Key_4            ,Key_5
+      ,___          ,LGUI_T(Minus)  ,LALT_T(Equals) ,___              ,___              ,Key_Tab
 
                         ,Key_PageUp               ,Key_Home                   ,Key_UpArrow              ,Key_End                ,Key_Insert
                         ,Key_PageDown             ,Key_LeftArrow              ,Key_DownArrow            ,Key_RightArrow         ,Key_Delete
