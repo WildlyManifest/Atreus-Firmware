@@ -46,10 +46,10 @@ KEYMAPS(
   /* Function keys, numeric keypad */
   [FNNM] = KEYMAP_STACKED
   (
-       Key_F11 ,Key_F12 ,System_PowerDown ,M(RESET) ,Key_Sysreq
-      ,Key_F6  ,Key_F7  ,Key_F8           ,Key_F9   ,Key_F10
-      ,Key_F1  ,Key_F2  ,Key_F3           ,Key_F4   ,Key_F5
-      ,___     ,___     ,___              ,___      ,___     ,Key_Escape
+       Key_F11 ,Key_F12 ,Key_Power  ,XXX    ,Key_Sysreq
+      ,Key_F6  ,Key_F7  ,Key_F8     ,Key_F9 ,Key_F10
+      ,Key_F1  ,Key_F2  ,Key_F3     ,Key_F4 ,Key_F5
+      ,___     ,___     ,___        ,___    ,___        ,Key_Escape
 
                   ,Key_KeypadDivide   ,Key_Keypad7  ,Key_Keypad8  ,Key_Keypad9        ,Key_KeypadSubtract
                   ,Key_KeypadMultiply ,Key_Keypad4  ,Key_Keypad5  ,Key_Keypad6        ,Key_KeypadAdd
@@ -62,7 +62,7 @@ KEYMAPS(
        Key_Backtick ,Key_Slash      ,Key_Backslash  ,Key_LeftBracket  ,Key_RightBracket
       ,Key_6        ,Key_7          ,Key_8          ,Key_9            ,Key_0
       ,Key_1        ,Key_2          ,Key_3          ,Key_4            ,Key_5
-      ,___          ,LGUI_T(Minus)  ,LALT_T(Equals) ,___              ,___              ,Key_Tab
+      ,___          ,LGUI_T(Minus)  ,LALT_T(Equals) ,XXX              ,___              ,Key_Tab
 
                         ,Key_PageUp               ,Key_Home                   ,Key_UpArrow              ,Key_End                ,Key_Insert
                         ,Key_PageDown             ,Key_LeftArrow              ,Key_DownArrow            ,Key_RightArrow         ,Key_Delete
